@@ -1,73 +1,34 @@
-# ignore everything in the root except the "wp-content" directory.
-/*
-!wp-content/
+ Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
-# ignore everything in the "wp-content" directory, except:
-# mu-plugins, plugins, and themes directories
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
 
-# ignore all mu-plugins, plugins, and themes
-# unless explicitly whitelisted at the end of this file
-wp-content/themes/*
 
-# ignore index.php in plugins folder
-wp-content/plugins/index.php
+# Configuration
+wp-config.php
 
-# ignore all files starting with . or ~
-.*
-~*
+# Example themes
+/wp-content/themes/twenty*/
 
-# ignore node dependency directories (used by grunt)
-node_modules/
+# Example plugin
+/wp-content/plugins/hello.php
 
-# ignore OS generated files
-ehthumbs.db
-Thumbs.db
+# Uploads
+/wp-content/uploads/
 
-# ignore Editor files
-*.sublime-project
-*.sublime-workspace
-*.komodoproject
-*.codekit3
-.idea
-
-# ignore log files and databases
+# Log files
 *.log
-*.sql
-*.sqlite
 
-# ignore compiled files
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# htaccess
+/.htaccess
 
-# ignore packaged files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
 
-# -------------------------
-# BEGIN Whitelisted Files
-# -------------------------
-
-# track these files, if they exist
-!.gitignore
-!.editorconfig
-!.scss-lint.yml
-!README.md
-!CHANGELOG.md
-!composer.json
-
-# track these themes
-!wp-content/themes/theme_name/
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
